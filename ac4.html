@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f8fa;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #4CAF50;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .task-list {
+      margin-top: 20px;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .task-list li {
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .task-list li span {
+      font-size: 16px;
+      color: #333;
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    /* Botão de Remover Retangular Estilizado */
+    .remove-btn {
+      background-color: #ff5733;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .remove-btn:hover {
+      background-color: #e03c28;
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .remove-btn:focus {
+      outline: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Gerenciador de Tarefas</h1>
+    <input type="text" id="taskInput" placeholder="Digite uma tarefa...">
+    <button onclick="addTask()">Adicionar Tarefa</button>
+
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+
+  <script src="todo.js"></script>
+
+</body>
+</html>
+
