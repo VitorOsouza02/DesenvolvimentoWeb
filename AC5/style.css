@@ -1,0 +1,92 @@
+/* Estilos globais para a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centraliza o container principal */
+.container {
+    text-align: center; 
+    width: 100%;
+    max-width: 400px; 
+    margin: auto; 
+}
+
+/* Estilos para o título */
+h1 {
+    color: #333;
+    margin-bottom: 20px; 
+}
+
+/* Estilos do formulário */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Estilos para cada grupo de campos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos para o rótulo de cada campo */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilos para os campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Permite que a área de texto seja redimensionada verticalmente */
+textarea {
+    resize: vertical;
+}
+
+/* Estilos para o botão de envio */
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Estilo para o botão quando está desabilitado */
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilo do botão ao passar o mouse (hover) */
+button[type="submit"]:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+/* Estilos para a exibição do resultado da validação */
+#result {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
